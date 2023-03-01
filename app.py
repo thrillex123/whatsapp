@@ -16,13 +16,13 @@ st.set_page_config(
 
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-  
+    st.markdown("")  
 with col2:
-   
+    st.markdown("")
 with col3:
-   
+    st.markdown("")
 with col4:
- 
+    st.markdown("") 
 with col5:
     st.markdown("[Vedametric](https://vedametric.com.au)")
 
