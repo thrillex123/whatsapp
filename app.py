@@ -16,15 +16,15 @@ st.set_page_config(
 
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    st.markdown("Do Visit @: ")
+  
 with col2:
-    st.markdown("[Linkedin](https://www.linkedin.com/in/santos-k)")
+   
 with col3:
-    st.markdown("[Kaggle](https://www.kaggle.com/kuchhbhi)")
+   
 with col4:
-    st.markdown("[Github](https://github.com/santos-k)")
+ 
 with col5:
-    st.markdown("[Tableau](https://public.tableau.com/app/profile/santosh.kumar3246)")
+    st.markdown("[Vedametric](https://vedametric.com.au)")
 
 # st.markdown('<font color=‘red’>THIS TEXT WILL BE RED</font>', unsafe_allow_html=True)
 
@@ -38,8 +38,8 @@ with col3:
 st.sidebar.caption(
     'This application lets you analyze Whatsapp conversations in a very comprehensive manner, with charts, metrics, '
     'and other forms of analysis.')
-st.title('WhatsApp Chat Analyzer')
-st.markdown('Developed with Streamlit, Developed by Santosh')
+st.title('Vedametric Analytics')
+st.markdown('')
 
 with st.expander('See!!.. How it works?'):
     st.subheader('Steps to Analyze:')
@@ -63,7 +63,7 @@ uploaded_file = st.sidebar.file_uploader("Choose a WhatsApp chat text file:")
 if uploaded_file is not None:
     # To read file as bytes:
     bytes_data = uploaded_file.getvalue()
-    data = bytes_data.decode(encoding='utf-8')
+    data = bytes_data.decode(encoding='latin-1')
     df = dataset.make_Dataframe(data)
 
     # extracting all unique username from df['name'], to show the name list
@@ -423,10 +423,10 @@ if uploaded_file is not None:
         with col1:
             st.markdown("Do Visit @: ")
         with col2:
-            st.markdown("[Linkedin](https://www.linkedin.com/in/santos-k)")
+            st.markdown("")
         with col3:
-            st.markdown("[Kaggle](https://www.kaggle.com/kuchhbhi)")
+            st.markdown("")
         with col4:
-            st.markdown("[Github](https://github.com/santos-k)")
+            st.markdown("")
         with col5:
-            st.markdown("[Tableau](https://public.tableau.com/app/profile/santosh.kumar3246)")
+            st.markdown("")
